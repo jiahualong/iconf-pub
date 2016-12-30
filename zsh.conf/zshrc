@@ -175,8 +175,9 @@ source $ZSH/oh-my-zsh.sh
 
 # 别名绑定
 #命令绑定
-alias vi='nvim'
-alias vim='nvim'
+alias vi='vim'
+alias vim='vim'
+#alias vim='nvim'
 alias grep='grep --color=auto'
 alias ll='ls -l'
 alias lm='l | more'
