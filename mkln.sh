@@ -7,6 +7,7 @@
 #
 #############################################################
 
+cd
 ICONF_DIR=~/.iconf
 # config part
 
@@ -26,7 +27,8 @@ ln -sf $ICONF_DIR/vim.conf/vimrc ~/.config/nvim/init.vim
 # data part
 
 ## oh-my-zsh & themes
-git clone https://github.com/robbyrussell/oh-my-zsh data/oh-my-zsh ~/.oh-my-zsh
+git clone https://github.com/robbyrussell/oh-my-zsh ~/.oh-my-zsh
+git clone https://github.com/jeremyFreeAgent/oh-my-zsh-powerline-theme .oh-my-zsh-powerline-theme
+cp .oh-my-zsh-powerline-theme/powerline.zsh-theme .oh-my-zsh/themes/
 
-git clone git://github.com/jeremyFreeAgent/oh-my-zsh-powerline-theme data/oh-my-zsh-powerline-theme .oh-my-zsh-powerline-theme
 
