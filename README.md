@@ -4,11 +4,12 @@
 
 
 ## 使用方法
-家目录
+
+    家目录
 ```shell
     git clone https://github.com/jiahualong/iconf-pub .iconf
     ./conf/mkln.sh
-```shell
+```
 
 ## zsh 环境
 
