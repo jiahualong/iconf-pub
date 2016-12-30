@@ -1,6 +1,9 @@
 # 标准环境配置
 
 将常用的配置放到这里， 用于新服务环境部署.
+安装之前需要安装:
+brew install tmux screen 
+apt-get install vim tmux screen zsh git
 
 
 ## 使用方法
