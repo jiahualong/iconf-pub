@@ -4,13 +4,17 @@
 
 
 ## 使用方法
-git clone xx .iconf
-./conf/mkln.sh
+家目录
+```shell
+    git clone https://github.com/jiahualong/iconf-pub .iconf
+    ./conf/mkln.sh
+```shell
 
 ## zsh 环境
 
     * oh-my-zsh
     * plugins: vi-mode git jump mvn gradle brew osx tmux zsh_reload colored-man-pages sudo
+    * 日常配置
 
 ## vim
 
