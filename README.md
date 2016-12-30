@@ -2,16 +2,19 @@
 
 将常用的配置放到这里， 用于新服务环境部署.
 安装之前需要安装:
-brew install tmux screen 
-apt-get install vim tmux screen zsh git
+
+Mac
+    brew install tmux screen 
+Ubuntu
+    apt-get install vim tmux screen zsh git
 
 
 ## 使用方法
 
-    家目录
+回到家目录
 ```shell
     git clone https://github.com/jiahualong/iconf-pub .iconf
-    ./conf/mkln.sh
+    .iconf/mkln.sh
 ```
 
 ## zsh 环境
