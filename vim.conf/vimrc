@@ -1,0 +1,53 @@
+"开启语法高量
+syntax enable
+syntax on
+
+"开启搜索高量
+set hlsearch
+
+"设置缩进宽度为4个空格
+set shiftwidth=4
+set tabstop=4
+set softtabstop=4
+
+"开启虚拟空格,开启后按tab时会产生空格
+set expandtab
+
+"开启文件类型侦测
+filetype on
+filetype plugin on
+
+"设置多编码处理
+"set fileencoding=utf-8
+"set encoding=utf-8
+"set tenc=utf-8
+"set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
+language message zh_CN.UTF-8
+
+"设置文件格式
+"set fileformats=mac,unix,dos
+
+"记录历史的行数 
+set history=5000
+
+"开启行号
+set nu
+
+"设置鼠标
+"set mouse=a
+set mouse=v
+
+"显示状态条
+set laststatus=2
+set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [POS=%04l,%04v][%p%%]\ [LEN=%L]
+
+
+" Dvorak remap
+" 1 - Movement keys htns -> hjkl
+"   (gj and gk move by visual lines, if the line is wrapped for instance)
+"noremap h h
+"noremap t gj
+"noremap n gk
+"noremap s l
+
+
