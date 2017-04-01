@@ -14,6 +14,9 @@ Ubuntu
 回到家目录
 ```shell
     git clone https://github.com/jiahualong/iconf-pub .iconf
+- or -
+    git clone git@github.com:jiahualong/iconf-pub.git .iconf
+
     .iconf/mkln.sh
 ```
 
