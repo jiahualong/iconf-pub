@@ -13,9 +13,9 @@ set softtabstop=4
 "开启虚拟空格,开启后按tab时会产生空格
 set expandtab
 
-"开启文件类型侦测
-filetype on
-filetype plugin on
+"开启文件类型侦测 vundle需要关闭这2项
+"filetype on
+"filetype plugin on
 
 "设置多编码处理
 "set fileencoding=utf-8
@@ -75,6 +75,5 @@ filetype plugin on
 " :PluginUpdate
 " :PluginSearch foo - searches for foo; append `!` to refresh local cache
 " :PluginClean      - confirms removal of unused plugins; append `!` to
-auto-approve removal
 " -----------------------------------------------------------
 
