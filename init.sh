@@ -1,26 +1,25 @@
 #!/bin/sh
 #############################################################
 #
-#	iconf make link script	
-#	0.0.1	magic.hualong@gmail.com
+#	iconf-pub script	
+#	magic.hualong@gmail.com
 #
 #
 #############################################################
 
-cd
-ICONF_DIR=~/.iconf
 # config part
+ICONF_DIR=~/iconf-pub
 
-## zsh
+echo 'init zsh config'
 ln -sf $ICONF_DIR/zsh.conf/zshrc ~/.zshrc
 
-## tmux
+echo 'init tmux config'
 ln -sf $ICONF_DIR/tmux.conf/tmux.conf ~/.tmux.conf
 
-## vim
+echo 'init vim config'
 ln -sf $ICONF_DIR/vim.conf/vimrc ~/.vimrc
 
-# nvim
+echo 'init nvim config'
 mkdir -p ~/.config/nvim/
 ln -sf $ICONF_DIR/vim.conf/vimrc ~/.config/nvim/init.vim
 
