@@ -31,6 +31,19 @@ apt install vim tmux screen zsh git
     * 键绑定，让tmux用起来更像是screen 
 
 
+## Uninstall 
+
+```shell
+rm -rf ~/.iconf-pub
+rm -rf ~/.oh-my-zsh
+rm -rf ~/.oh-my-zsh-powerline-theme
+rm -rf ~/.tmux.conf
+rm -rf ~/.vimrc
+rm -rf ~/.vim
+rm -rf ~/.viminfo
+rm -rf ~/.zshrc
+```
+
 
 
 
