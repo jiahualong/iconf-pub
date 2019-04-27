@@ -8,7 +8,7 @@
 #############################################################
 
 # config part
-ICONF_DIR=~/iconf-pub
+ICONF_DIR=~/.iconf-pub
 
 echo 'init zsh config'
 ln -sf $ICONF_DIR/zsh.conf/zshrc ~/.zshrc
@@ -32,3 +32,6 @@ cp ~/.oh-my-zsh-powerline-theme/powerline.zsh-theme ~/.oh-my-zsh/themes/
 
 # clone vundle
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+
+
+
