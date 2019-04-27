@@ -17,6 +17,26 @@ apt install vim tmux screen zsh git
     .iconf/init.sh
 ```
 
+## use zsh 
+
+
+查看zsh位置 
+
+```
+cat /etc/shells
+
+/bin/sh
+/bin/zsh
+/usr/bin/zsh
+```
+
+改变默认sh
+
+```shell
+chsh -s /bin/zsh
+```
+
+
 ## zsh 环境
 
     * oh-my-zsh
@@ -43,6 +63,7 @@ rm -rf ~/.vim
 rm -rf ~/.viminfo
 rm -rf ~/.zshrc
 ```
+
 
 
 
