@@ -222,6 +222,7 @@ alias mysqldocker='docker exec -it mysql /bin/sh'
 alias dtail='sudo docker logs --tail 100 -f'
 alias dps='sudo docker ps '
 alias dpsa='sudo docker ps -a'
+alias dpid='sudo docker inspect --format {{.State.Pid}} '
 
 ## java
 alias javapverbose='javap -verbose '
