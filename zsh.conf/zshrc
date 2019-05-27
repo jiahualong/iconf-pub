@@ -220,6 +220,8 @@ alias tmuxn='tmux new-session -s '
 ## docker 
 alias mysqldocker='docker exec -it mysql /bin/sh'
 alias dtail='sudo docker logs --tail 100 -f'
+alias dps='sudo docker ps '
+alias dpsa='sudo docker ps -a'
 
 ## java
 alias javapverbose='javap -verbose '
