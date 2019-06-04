@@ -54,8 +54,8 @@ rm -rf ~/.zshrc
 | `proxyopenshell` | shell 使用 proxy |
 | `proxycloseshell` | shell 不使用 proxy |
 | **tmux** | tmux 中切换窗口键位是screen 风格 |
-| `tmuxn` sessionName`  | tmux 创建名为sessionName的session |
-| `tmuxt` sessionName` | tmux 进入名为sessionName的session  |
+| `tmuxn` sessionName  | tmux 创建名为sessionName的session |
+| `tmuxt` sessionName | tmux 进入名为sessionName的session  |
 | `tmuxl` | 列出tmux 所有session   |
 | **docker**  | | 
 | `dps` | 列出docker中正在运行的container |
