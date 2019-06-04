@@ -47,9 +47,9 @@ rm -rf ~/.zshrc
 
 | command | info | 
 |:---|:---|
-| -zsh -|  |
-|vizsh | 编辑 zsh 配置 |
-|sozsh | 加载 zsh 配置 |
+| **zsh** |  |
+| `vizsh` | 使用 vim 打开zsh配置文件，改proxy可以`vizsh`进行修改 |
+| `sozsh` | 修改了zsh配置文件后在当前shell需要重新加载zsh配置，使用`sozsh`可重新加载配置 |
 | **proxy** | default proxy is `127.0.0.1:9999 socket5 proxy`  |
 | `proxyopengit` | git 使用  proxy |
 | `proxyclosegit` | git 不使用  proxy |
