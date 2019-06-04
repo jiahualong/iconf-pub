@@ -218,11 +218,12 @@ alias tmuxl='tmux ls'
 alias tmuxn='tmux new-session -s '
 
 ## docker 
+# Linux docker 需要 sudo 
 alias dps='sudo docker ps '
 alias dpsa='sudo docker ps -a'
 alias dpid='sudo docker inspect --format {{.State.Pid}} '
 alias dtail='sudo docker logs --tail 1000 -f'
-alias dexec='f() { docker exec -it $1 /bin/bash};f'
+alias dexec='f() { sudo docker exec -it $1 /bin/bash};f'
 
 ## java
 alias javapverbose='javap -verbose '
