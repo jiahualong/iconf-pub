@@ -51,22 +51,18 @@ rm -rf ~/.zshrc
 | `vizsh` | 使用 vim 打开zsh配置文件，改proxy可以`vizsh`进行修改 |
 | `sozsh` | 修改了zsh配置文件后在当前shell需要重新加载zsh配置，使用`sozsh`可重新加载配置 |
 | **proxy** | default proxy is `127.0.0.1:9999 socket5 proxy`  |
-| `proxyopengit` | git 使用  proxy |
-| `proxyclosegit` | git 不使用  proxy |
 | `proxyopenshell` | shell 使用 proxy |
 | `proxycloseshell` | shell 不使用 proxy |
-| `npmproxyopen` | npm 使用 proxy |
-| `npmproxyclose`| npm 不使用proxy |
 | **tmux** | tmux 中切换窗口键位是screen 风格 |
-| `tmuxn name`  | tmux 创建名为name的session |
-| `tmuxt name` | tmux 进入名为name的session  |
+| `tmuxn` sessionName`  | tmux 创建名为sessionName的session |
+| `tmuxt` sessionName` | tmux 进入名为sessionName的session  |
 | `tmuxl` | 列出tmux 所有session   |
 | **docker**  | | 
 | `dps` | 列出docker中正在运行的container |
 | `dpsa` | 列出docker中运行和没有运行的container |
-| `dpid containerIDName` | 列出 `containerIDName` 的 pid | 
-| `dtail containerIDName` | tail `containerIDName` 的日志 |
-| `dexec containerIDName` | 进入 `containerIDName` 内部 |
+| `dpid` containerIDOrName | 列出 `containerIDOrName` 的 pid | 
+| `dtail` containerIDOrName | tail `containerIDOrName` 的日志 |
+| `dexec` containerIDOrName | 进入 `containerIDOrName` 内部 |
 
 
 
