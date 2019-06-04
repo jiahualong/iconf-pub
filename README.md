@@ -50,23 +50,23 @@ rm -rf ~/.zshrc
 | -zsh -|  |
 |vizsh | 编辑 zsh 配置 |
 |sozsh | 加载 zsh 配置 |
-| -proxy -| default proxy is `127.0.0.1:9999 socket5 proxy`  |
-| proxyopengit | git 使用  proxy |
-| proxyclosegit | git 不使用  proxy |
-| proxyopenshell | shell 使用 proxy |
-| proxycloseshell | shell 不使用 proxy |
-| npmproxyopen | npm 使用 proxy |
-| npmproxyclose| npm 不使用proxy |
-| -tmux -| tmux 中切换窗口键位是screen 风格 |
-| tmuxn name  | tmux 创建名为name的session |
-| tmuxn t name | tmux 进入名为name的session  |
-| tmuxl | 列出tmux 所有session   |
-| -docker- | | 
-| dps | 列出docker中正在运行的container |
-| dpsa | 列出docker中运行和没有运行的container |
-| dpid containerIDName | 列出 containerIDName 的 pid | 
-| dtail containerIDName | tail containerIDName 的日志 |
-| dexec containerIDName | 进入 containerIDName 内部 |
+| **proxy** | default proxy is `127.0.0.1:9999 socket5 proxy`  |
+| `proxyopengit` | git 使用  proxy |
+| `proxyclosegit` | git 不使用  proxy |
+| `proxyopenshell` | shell 使用 proxy |
+| `proxycloseshell` | shell 不使用 proxy |
+| `npmproxyopen` | npm 使用 proxy |
+| `npmproxyclose`| npm 不使用proxy |
+| **tmux** | tmux 中切换窗口键位是screen 风格 |
+| `tmuxn name`  | tmux 创建名为name的session |
+| `tmuxt name` | tmux 进入名为name的session  |
+| `tmuxl` | 列出tmux 所有session   |
+| **docker**  | | 
+| `dps` | 列出docker中正在运行的container |
+| `dpsa` | 列出docker中运行和没有运行的container |
+| `dpid containerIDName` | 列出 `containerIDName` 的 pid | 
+| `dtail containerIDName` | tail `containerIDName` 的日志 |
+| `dexec containerIDName` | 进入 `containerIDName` 内部 |
 
 
 
