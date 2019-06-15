@@ -224,6 +224,7 @@ alias dpsa='sudo docker ps -a'
 alias dpid='sudo docker inspect --format {{.State.Pid}} '
 alias dtail='sudo docker logs --tail 1000 -f'
 alias dexec='f() { sudo docker exec -it $1 /bin/bash};f'
+alias dmysqldump='f() { sudo docker exec $1 /usr/bin/mysqldump -u$2 -p$3 $4 };f'
 
 ## java
 alias javapverbose='javap -verbose '
