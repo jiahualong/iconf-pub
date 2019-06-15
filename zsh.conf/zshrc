@@ -225,7 +225,7 @@ alias dtail='sudo docker logs --tail 1000 -f'
 alias dexec='f() { sudo docker exec -it $1 /bin/bash};f'
 ## thanks for https://gist.github.com/spalladino/6d981f7b33f6e0afe6bb
 alias dmysqldump='f() { sudo docker exec $1 /usr/bin/mysqldump -u$2 -p$3 $4 };f'
-alias dmysqlimport='f() { cat $5 | sudo docker exec -i $1 /usr/bin/mysql -u$2 -p$3 $4 };f'
+alias dmysqlimport='f() { cat $5 | sudo docker exec -i $1 /usr/bin/mysql -u$2 -p$3 `$4` };f'
 alias dmysql='f() { sudo docker exec -it $1 /usr/bin/mysql -u$2 -p$3 };f '
 
 ## java
