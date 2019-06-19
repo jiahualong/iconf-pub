@@ -228,6 +228,9 @@ alias dmysqldump='f() { sudo docker exec $1 /usr/bin/mysqldump -u$2 -p$3 "$4" };
 alias dmysqlimport='f() { cat "$5" | sudo docker exec -i $1 /usr/bin/mysql -u$2 -p$3 "$4" };f'
 alias dmysql='f() { sudo docker exec -it $1 /usr/bin/mysql -u$2 -p$3 };f '
 
+#utils
+alias netstatls='f() { sudo netstat -tulpn | grep $1 };f '
+
 ## java
 alias javapverbose='javap -verbose '
 
