@@ -229,7 +229,7 @@ alias dmysqlimport='f() { cat "$5" | sudo docker exec -i $1 /usr/bin/mysql -u$2 
 alias dmysql='f() { sudo docker exec -it $1 /usr/bin/mysql -u$2 -p$3 };f '
 
 #utils
-alias netstatls='f() { sudo netstat -tulpn | grep $1 };f '
+alias netstatls='f() { sudo netstat -tulpn };f '
 
 ## java
 alias javapverbose='javap -verbose '
