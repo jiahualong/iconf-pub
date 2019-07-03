@@ -218,15 +218,26 @@ alias tmuxn='tmux new-session -s '
 
 ## docker 
 # Linux docker 需要 sudo 
+# dcp nginx:/home/nginx/a.html .
+alias dcp='sudo docker cp '
 alias dps='sudo docker ps '
 alias dpsa='sudo docker ps -a'
 alias dpid='sudo docker inspect --format {{.State.Pid}} '
 alias dtail='sudo docker logs --tail 1000 -f'
-alias dexec='f() { sudo docker exec -it $1 /bin/bash};f'
+alias dexec='dexec() { if [ $# != 1 ] ; then echo "USAGE: $0 docker_name_or_pid" ; else ; sudo docker exec -it "$1" /bin/bash ; fi } ; dexec'
 ## thanks for https://gist.github.com/spalladino/6d981f7b33f6e0afe6bb
-alias dmysqldump='f() { sudo docker exec $1 /usr/bin/mysqldump -u$2 -p$3 "$4" };f'
-alias dmysqlimport='f() { cat "$5" | sudo docker exec -i $1 /usr/bin/mysql -u$2 -p$3 "$4" };f'
-alias dmysql='f() { sudo docker exec -it $1 /usr/bin/mysql -u$2 -p$3 };f '
+alias dmysqldump='dmysqldump() { if [ $# != 4 ] ; then echo "USAGE: $0 docker_name_or_pid mysql_username mysql_password mysql_dbname" ; else ; sudo docker exec "$1" /usr/bin/mysqldump -u$2 -p$3 "$4" ; fi }; dmysqldump '
+alias dmysqlimport='dmysqlimport() { if [ $# != 5 ] ; then echo "USAGE: $0 docker_name_or_pid mysql_username mysql_password mysql_dbname mysql_dbdump_file" ; else ; cat "$5" | sudo docker exec -i "$1" /usr/bin/mysql -u$2 -p$3 "$4" ; fi }; dmysqlimport'
+alias dmysql='dmysql() { if [ $# != 3 ] ; then echo "USAGE: $0 docker_name_or_pid mysql_username mysql_password " ; else ; sudo docker exec -it "$1" /usr/bin/mysql -u$2 -p$3 ; fi };dmysql '
+
+#utils
+alias netstatls='f() { sudo netstat -tulpn };f '
+
+## java
+alias javapverbose='javap -verbose '
+
+#ping
+alias ping1='ping 192.168.1.1'
 
 #utils
 alias netstatls='f() { sudo netstat -tulpn };f '
