@@ -233,6 +233,9 @@ alias dmysql='dmysql() { if [ $# != 3 ] ; then echo "USAGE: $0 docker_name_or_pi
 #utils
 alias netstatls='f() { sudo netstat -tulpn };f '
 
+alias eshealth='f() { curl $1/_cat/health };f '
+alias espetty='f() { curl $1/\?pretty };f '
+
 ## java
 alias javapverbose='javap -verbose '
 
