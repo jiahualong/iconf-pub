@@ -58,14 +58,16 @@ rm -rf ~/.zshrc
 | `tmuxt` sessionName | tmux 进入名为sessionName的session  |
 | `tmuxl` | 列出tmux 所有session   |
 | **docker**  | | 
+| `dcp` | 从本地向docker　container拷贝文件 |
 | `dps` | 列出docker中正在运行的container |
 | `dpsa` | 列出docker中运行和没有运行的container |
 | `dpid` containerIDOrName | 列出 `containerIDOrName` 的 pid | 
 | `dtail` containerIDOrName | tail `containerIDOrName` 的日志 |
 | `dexec` containerIDOrName | 进入 `containerIDOrName` 内部 |
-
-
-
-
-
+| **docker-mysql**  | | 
+| `dmysqldump`| 从docker mysql中dump |
+| `dmysqlimport`| 向docker mysql中import |
+| `dmysql`| 登录docker中的mysql |
+| **elastic-search-tools**  | | 
+| `eshealth`| 查看es状态 |
 
