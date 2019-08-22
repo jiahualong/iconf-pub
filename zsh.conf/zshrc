@@ -229,7 +229,7 @@ alias dexec='dexec() { if [ $# != 1 ] ; then echo "USAGE: $0 docker_name_or_pid"
 alias dmysqldump='dmysqldump() { if [ $# != 4 ] ; then echo "USAGE: $0 docker_name_or_pid mysql_username mysql_password mysql_dbname" ; else ; sudo docker exec "$1" /usr/bin/mysqldump -u$2 -p$3 "$4" ; fi }; dmysqldump '
 alias dmysqlimport='dmysqlimport() { if [ $# != 5 ] ; then echo "USAGE: $0 docker_name_or_pid mysql_username mysql_password mysql_dbname mysql_dbdump_file" ; else ; cat "$5" | sudo docker exec -i "$1" /usr/bin/mysql -u$2 -p$3 "$4" ; fi }; dmysqlimport'
 alias dmysql='dmysql() { if [ $# != 3 ] ; then echo "USAGE: $0 docker_name_or_pid mysql_username mysql_password " ; else ; sudo docker exec -it "$1" /usr/bin/mysql -u$2 -p$3 ; fi };dmysql '
-alias k3slog='k3s kubectl logs '
+alias k3slog='k3s kubectl logs -n '
 alias k3spods='k3s kubectl get pods -A'
 alias k3sservices='kubectl get services'
 
