@@ -77,4 +77,8 @@ rm -rf ~/.zshrc
 | `dmysql`| 登录docker中的mysql |
 | **elastic-search-tools**  | | 
 | `eshealth`| 查看es状态 |
+| **k3s-tools**  | | 
+| `k3slogs` pod_name playground| 查看playground环境的pod_name日志 |
+| `k3spods` | 查看所有环境的pods |
+| `k3sservices` | 查看所有环境的services |
 
