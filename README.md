@@ -16,6 +16,13 @@ Debian
 apt install vim tmux screen zsh git
 ```
 
+FreeBSD 
+```shell
+sudo pkg install vim tmux screen zsh git
+```
+
+
+
 ## 设置配置
 
 ```shell
