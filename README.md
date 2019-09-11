@@ -78,7 +78,7 @@ rm -rf ~/.zshrc
 | **elastic-search-tools**  | | 
 | `eshealth`| 查看es状态 |
 | **k3s-tools**  | | 
-| `k3slogs` pod_name playground| 查看playground环境的pod_name日志 |
-| `k3spods` | 查看所有环境的pods |
-| `k3sservices` | 查看所有环境的services |
-
+| `k3snamespace`| 查看k3s当前目录下所有的namespace|
+| `k3spod` namespace    | 查看namespace下所有的pod      |
+| `k3sservice` namespace| 查看namespace下所有的service  |
+| `k3slogs` namespace pod_name | 查看namespace下的pod_name(pod_name是`k3spod`命令结果的`NAME字段`)的滚动日志 |
