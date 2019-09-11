@@ -79,6 +79,6 @@ rm -rf ~/.zshrc
 | `eshealth`| 查看es状态 |
 | **k3s-tools**  | | 
 | `k3snamespace`| 查看k3s当前目录下所有的namespace|
-| `k3spod` namespace    | 查看namespace下所有的pod      |
-| `k3sservice` namespace| 查看namespace下所有的service  |
+| `k3spod` namespace    | 查看`namespace`下所有的pod, 不传`namespace`为所有的`namespace`      |
+| `k3sservice` namespace| 查看`namespace`下所有的service, 不传`namespace`为所有的`namespace`   |
 | `k3slogs` namespace pod_name | 查看namespace下的pod_name(pod_name是`k3spod`命令结果的`NAME字段`)的滚动日志 |
