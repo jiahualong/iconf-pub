@@ -229,9 +229,15 @@ alias dexec='dexec() { if [ $# != 1 ] ; then echo "USAGE: $0 docker_name_or_pid"
 alias dmysqldump='dmysqldump() { if [ $# != 4 ] ; then echo "USAGE: $0 docker_name_or_pid mysql_username mysql_password mysql_dbname" ; else ; sudo docker exec "$1" /usr/bin/mysqldump -u$2 -p$3 "$4" ; fi }; dmysqldump '
 alias dmysqlimport='dmysqlimport() { if [ $# != 5 ] ; then echo "USAGE: $0 docker_name_or_pid mysql_username mysql_password mysql_dbname mysql_dbdump_file" ; else ; cat "$5" | sudo docker exec -i "$1" /usr/bin/mysql -u$2 -p$3 "$4" ; fi }; dmysqlimport'
 alias dmysql='dmysql() { if [ $# != 3 ] ; then echo "USAGE: $0 docker_name_or_pid mysql_username mysql_password " ; else ; sudo docker exec -it "$1" /usr/bin/mysql -u$2 -p$3 ; fi };dmysql '
+
+## K3S ###
+alias k3sallpods='k3s kubectl get pods -A'
+alias k3sallservices='k3s kubectl get services -A'
+alias k3spod='k3spods() { if [ $# != 1 ] ; then echo "USAGE: $0 env " ; else ; k3s kubectl -n "$1" get pod; fi };k3spods'
+alias k3sservice='k3sservice() { if [ $# != 1 ] ; then echo "USAGE: $0 env " ; else ; k3s kubectl -n "$1" get service; fi };k3sservice'
 alias k3slogs='k3slogs() { if [ $# != 2 ] ; then echo "USAGE: $0 pods_name playground " ; else ; k3s kubectl logs -f "$1" -n "$2" ; fi };k3slogs '
-alias k3spods='k3s kubectl get pods -A'
-alias k3sservices='kubectl get services'
+alias k3snamespace='k3s kubectl get namespaces'
+
 
 #utils
 alias netstatls='f() { sudo netstat -tulpn };f '
