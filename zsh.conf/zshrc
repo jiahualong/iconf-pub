@@ -212,9 +212,13 @@ alias npmproxyopen='export npm_config_proxy=http://127.0.0.1:9999'
 alias npmproxyclose='export npm_config_proxy='
 
 ## tmux
-alias tmuxt='tmux attach -t '
-alias tmuxl='tmux ls'
-alias tmuxn='tmux new-session -s '
+#alias tmuxt='tmux attach -t '
+#alias tmuxl='tmux ls'
+#alias tmuxn='tmux new-session -s '
+
+## linux 
+#
+alias cpuinfo='cat /proc/cpuinfo| grep "processor"'
 
 ## docker 
 # Linux docker 需要 sudo 
