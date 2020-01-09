@@ -236,8 +236,8 @@ alias dmysqlimport='dmysqlimport() { if [ $# != 5 ] ; then echo "USAGE: $0 docke
 alias dmysql='dmysql() { if [ $# != 3 ] ; then echo "USAGE: $0 docker_name_or_pid mysql_username mysql_password " ; else ; sudo docker exec -it "$1" /usr/bin/mysql -u$2 -p$3 ; fi };dmysql '
 
 ## K3S ###
-alias k3sns='k3s kubectl get namespaces'
-alias k3snode='k3s kubectl get node'
+alias k3sns='sudo k3s kubectl get namespaces'
+alias k3snode='sudo k3s kubectl get node'
 alias k3spod='k3spod() { if (( $# > 1 )) ; then echo "USAGE: $0 namespace " ; elif (( $# == 0 )); then k3s kubectl get pod -A ; else ; k3s kubectl -n "$1" get pod; fi };k3spod'
 alias k3sservice='k3sservice() { if (( $# > 1 )) ; then echo "USAGE: $0 namespace " ; elif (( $# == 0 )); then k3s kubectl get service -A ;else ; k3s kubectl -n "$1" get service; fi };k3sservice'
 alias k3slogs='k3slogs() { if [ $# != 2 ] ; then echo "USAGE: $0 namespace pod_name " ; else ; k3s kubectl -n "$1" logs -f "$2" ; fi };k3slogs '
