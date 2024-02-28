@@ -24,6 +24,11 @@ filetype plugin on
 "set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
 "language message zh_CN.UTF-8
 
+"不自动换行
+set nowrap
+"检索忽略大小写
+set ic "ignorecase noic #ignorecase
+
 "设置文件格式
 "set fileformats=mac,unix,dos
 
