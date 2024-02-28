@@ -14,15 +14,15 @@ set softtabstop=4
 set expandtab
 
 "开启文件类型侦测 vundle需要关闭这2项
-"filetype on
-"filetype plugin on
+filetype on
+filetype plugin on
 
 "设置多编码处理
 "set fileencoding=utf-8
 "set encoding=utf-8
 "set tenc=utf-8
 "set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
-language message zh_CN.UTF-8
+"language message zh_CN.UTF-8
 
 "设置文件格式
 "set fileformats=mac,unix,dos
@@ -41,39 +41,7 @@ set mouse=v
 set laststatus=2
 set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [POS=%04l,%04v][%p%%]\ [LEN=%L]
 
-
-" Dvorak remap
-" 1 - Movement keys htns -> hjkl
-"   (gj and gk move by visual lines, if the line is wrapped for instance)
-"noremap h h
-"noremap t gj
-"noremap n gk
-"noremap s l
-
-
 "Lokaltog/vim-powerline config
 let g:Powerline_symbols = 'fancy'
 set laststatus=2
-
-
-" Vundle
-" -----------------------------------------------------------
-set nocompatible              " be iMproved, required
-filetype off                  " required
-
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-Plugin 'VundleVim/Vundle.vim' " let Vundle manage Vundle, required
-Plugin 'Lokaltog/vim-powerline'
-
-call vundle#end()            " required
-filetype plugin indent on    " required
-filetype plugin on
-" :PluginList       - lists configured plugins
-" :PluginInstall    - installs plugins; append `!` to update or just
-" :PluginUpdate
-" :PluginSearch foo - searches for foo; append `!` to refresh local cache
-" :PluginClean      - confirms removal of unused plugins; append `!` to
-" -----------------------------------------------------------
 

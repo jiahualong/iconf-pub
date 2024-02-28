@@ -6,19 +6,18 @@
 
     * oh-my-zsh 开启插件plugins: vi-mode git jump mvn gradle brew osx tmux zsh_reload colored-man-pages sudo
     * vim 日常配置
-    * tmux 键绑定，让tmux用起来更像是screen 
 
 
 ## 日常软件安装
 
 Debian
 ```shell
-apt install vim tmux screen zsh git
+apt install nvim screen zsh git
 ```
 
 FreeBSD 
 ```shell
-sudo pkg install vim tmux screen zsh git
+sudo pkg install nvim screen zsh git
 ```
 
 

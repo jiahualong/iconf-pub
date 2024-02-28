@@ -86,12 +86,7 @@ SAVEHIST=10000
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-#ZSH_THEME="robbyrussell"
-ZSH_THEME="powerline"
-#ZSH_THEME="kardan"
-#ZSH_THEME="norm"
-#ZSH_THEME="risto"
-#ZSH_THEME="simple"
+ZSH_THEME="simple"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -173,22 +168,22 @@ source $ZSH/oh-my-zsh.sh
 #
 
 # 别名绑定
+#
+# vim 绑定
+alias vi='nvim'
+alias vim='nvim'
+alias vimdiff='nvim -d'
+export EDITOR=nvim
+
 #命令绑定
-#alias vi='vim'
-#alias vim='vim'
-#alias vim='nvim'
 alias grep='grep --color=auto'
 alias ll='ls -l'
 alias lm='l | more'
 alias rmrf='rm -rf'
 alias tail100='tail -n100 -f '
 
-
 alias vizsh='vim ~/.zshrc'
 alias sozsh='source ~/.zshrc'
-alias data='cd /data'
-alias work='cd ~/work'
-alias pwgen30='pwgen 30 -y'
 
 # gradle
 alias gradleinitjava='gradle init --type java-library'
@@ -266,10 +261,10 @@ alias javapverbose='javap -verbose '
 alias ping1='ping 192.168.1.1'
 
 #扩展名绑定
-alias -s conf=nvim
-alias -s json=nvim
-alias -s html=nvim
-alias -s md=nvim
+#alias -s conf=vim
+#alias -s json=vim
+#alias -s html=vim
+#alias -s md=vim
 
 #tmux_init() { }
 # 判断是否已有开启的tmux会话，没有则开启
