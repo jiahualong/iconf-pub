@@ -130,7 +130,22 @@ ZSH_THEME="simple"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(vi-mode git jump mvn gradle brew osx tmux zsh_reload colored-man-pages sudo zsh_reload z extract zsh-autosuggestions docker docker-compose docker-machine )
+#
+plugins=(
+    vi-mode 
+    git 
+    jump 
+    colored-man-pages 
+    sudo 
+    z 
+    extract 
+    zsh-autosuggestions 
+    docker 
+    docker-compose 
+    docker-machine 
+)
+
+
 #plugins=(vi-mode git jump osx mvn gradle)
 
 # User configuration
